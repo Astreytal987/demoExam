@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин обуви</title>
+</head>
+
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    html {
+        height: 100%;
+        width: 100%;
+    }
+
+    body {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    nav {
+        background-color: aquamarine;
+        width: 20%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        border-right: 1px solid black;
+    }
+
+    .itemNavigation {
+        border: 2px solid black;
+        background-color: white;
+        padding: 20px;
+        border-radius: 20px;
+        margin: 15px;
+        text-align: center;
+        width: 130px;
+    }
+
+    .catalog-item {
+        display: grid;
+        grid-template-columns: 160px 1fr 140px;
+        align-items: stretch;
+        border: 2px solid #111;
+        background: #fff;
+        min-height: 120px;
+    }
+
+    .catalog-info {
+        padding: 12px 16px;
+        border-right: 2px solid #111;
+        line-height: 1.25;
+        font-size: 15px;
+    }
+
+
+    .info-row {
+        display: flex;
+        gap: 6px;
+    }
+
+    .info-label {
+        font-weight: 700;
+    }
+
+    .catalog-discount {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 8px;
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    .photo-box {
+        width: 90%;
+        height: 90%;
+        border: 2px solid #111;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+    }
+
+    header {
+        height: 60px;
+        width: 100%;
+        background-color: beige;
+    }
+
+    main {
+        width: 100%;
+    }
+</style>
+
+<body>
+    <nav>
+        <!-- <div class="itemNavigation">
+            <p>Каталог</p>
+        </div> -->
+        <div class="itemNavigation">
+            <p>Главное</p>
+        </div>
+        <div class="itemNavigation">
+            <p>Карзина</p>
+        </div>
+        <div>
+            <div class="itemNavigation">
+                <p>Профиль</p>
+            </div>
+            <div class="itemNavigation">
+                <p>Выход из профиля</p>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <header></header>
+        <article class="catalog-item">
+            <div class="catalog-photo">
+                <div class="photo-box">Фото</div>
+            </div>
+            <div class="catalog-info">
+                <div class="info-row"><span class="info-label">Категория товара</span><span>|</span><span>Наименование
+                        товара</span></div>
+                <div class="info-row"><span class="info-label">Описание товара:</span><span></span></div>
+                <div class="info-row"><span class="info-label">Производитель:</span><span></span></div>
+                <div class="info-row"><span class="info-label">Поставщик:</span><span></span></div>
+                <div class="info-row"><span class="info-label">Цена:</span><span></span></div>
+                <div class="info-row"><span class="info-label">Единица измерения:</span><span></span></div>
+                <div class="info-row"><span class="info-label">Количество на складе:</span><span></span></div>
+            </div>
+            <div class="catalog-discount">Действующая скидка</div>
+        </article>
+    </main>
+</body>
+
+</html>
